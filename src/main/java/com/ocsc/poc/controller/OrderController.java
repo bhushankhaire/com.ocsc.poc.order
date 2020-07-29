@@ -23,7 +23,7 @@ public class OrderController {
 
 	@GetMapping(path = "/order/{orderId}", produces = "application/json")
 	@ResponseStatus(HttpStatus.OK)
-	public void getCartDetailsByUserId(@RequestHeader(value = "X-OCSC-UserId") Integer userId) {
+	public void getOrderDetailsByOrderIdAndUserId(@RequestHeader(value = "X-OCSC-UserId") Integer userId) {
 
 	}
 
