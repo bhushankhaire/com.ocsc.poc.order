@@ -28,7 +28,8 @@ spec:
         app: order-app
     spec:
       containers:
-      - image: bom.ocir.io/yzguo69kabyn/bkhaire/com.ocsc.poc.order:latest
+      - image: bom.ocir.io/yzguo69kabyn/bkhaire/com.ocsc.poc.order:BUILD_NUMBER
+        imagePullPolicy: Always
         name: order-api
         ports:
           - containerPort: 8080
